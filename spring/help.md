@@ -6,7 +6,7 @@ In this guide, we will walk through the steps to set up a development environmen
 
 Java 17 is the latest long-term support (LTS) version of the Java programming language. It's essential for Java application development.
 
-1. Download and install Java 17 by visiting the official website of the OpenJDK: [OpenJDK 17 Download](https://www.oracle.com/in/java/technologies/downloads/#java17).
+1. Download and install Java 17 by visiting the official website of the OpenJDK: [OpenJDK 17](https://www.oracle.com/in/java/technologies/downloads/#java17).
 
 2. Follow the installation instructions for your operating system. After installation, you can verify that Java 17 is correctly installed by opening your command-line interface and running the following command:
 
@@ -14,8 +14,6 @@ Java 17 is the latest long-term support (LTS) version of the Java programming la
    java -version
 
 ## Spring Tool Suite (STS)
-
-### Introduction
 
 Spring Tool Suite (STS) is an integrated development environment for building Spring-based enterprise applications. This guide will walk you through the steps to download and install STS on your system.
 
