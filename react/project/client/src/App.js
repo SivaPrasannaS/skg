@@ -1,13 +1,11 @@
 import React from 'react';
 import './App.css';
-import HelloWorld from './components/HelloWorld';
-import HelloWorldClass from './components/HelloWorldClass';
+import Form from './components/form/Form';
 
 function App() {
   return (
     <div className="App">
-      <HelloWorld />
-      <HelloWorldClass />
+      <Form />
     </div>
   );
 }
