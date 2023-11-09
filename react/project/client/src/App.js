@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import DynamicRendering from './components/class_exercises/Day3/CE/DynamicRendering';
+import Form from './components/form/Form';
 
 function App() {
   return (
     <div className="App">
-      <DynamicRendering />
+      <Form />
     </div>
   );
 }
