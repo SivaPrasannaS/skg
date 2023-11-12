@@ -34,7 +34,7 @@ const Form = () => {
                     <input type="email" name="email" id="email" required onChange={handleChangeEvent} />
                 </div>
                 <div className="input__fields">
-                    <label htmlFor="password">password</label>
+                    <label htmlFor="password">Password</label>
                     <input type="password" name="password" id="password" required minLength={8} maxLength={15} onChange={handleChangeEvent} />
                 </div>
                 <button type="submit">Register</button>
