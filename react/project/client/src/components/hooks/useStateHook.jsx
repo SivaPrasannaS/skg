@@ -18,14 +18,12 @@ const useStateHook = () => {
     }
 
     return (
-        <>
-            <div>
-                {/* {isShow ? <p>Online</p> : <p>Offline</p>} */}
-                {/* <button onClick={handleEvent}>Show</button> */}
-                <p>{data}</p>
-                <input type="text" name="name" id="name" onChange={handleChangeEvent} />
-            </div>
-        </>
+        <div>
+            {/* {isShow ? <p>Online</p> : <p>Offline</p>} */}
+            {/* <button onClick={handleEvent}>Show</button> */}
+            <p>{data}</p>
+            <input type="text" name="name" id="name" onChange={handleChangeEvent} />
+        </div>
     )
 }
 

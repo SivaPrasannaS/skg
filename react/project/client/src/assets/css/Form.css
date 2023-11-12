@@ -1,17 +1,19 @@
 .form__container {
   width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  user-select: none;
 }
 
-.form {
-  width: 400px;
-  position: absolute;
+.register__form {
+  width: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .input__fields {
@@ -19,38 +21,37 @@
   flex-direction: column;
   justify-content: center;
   align-items: last baseline;
-  margin-bottom: 10px;
+  margin: 10px 0;
 }
 
-.input__fields label {
+label {
   margin-bottom: 5px;
+  letter-spacing: 1px;
 }
 
 input {
   width: 200px;
-  height: 25px;
+  height: 20px;
   text-align: left;
-  padding: 10px;
+  letter-spacing: 1px;
+  padding-left: 10px;
+  border: 0.2px solid #00000090;
+  border-radius: 10px;
   outline: none;
-  caret-color: #000;
 }
 
-input:focus {
-  border: 2px solid #000;
+input:focus-within {
+  border: 1.1px solid #000;
 }
 
-button {
+.submit__btn {
+  width: 120px;
+  height: 25px;
   background-color: #000;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 1px;
   border: none;
   border-radius: 10px;
-  width: 150px;
-  height: 30px;
-  text-align: center;
-  color: #fff;
-  letter-spacing: 1px;
-}
-
-button:hover {
-  background-color: #fff;
-  color: #000;
+  cursor: pointer;
 }

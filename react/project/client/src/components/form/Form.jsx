@@ -24,7 +24,7 @@ const Form = () => {
 
     return (
         <div className='form__container'>
-            <form className='form' method='POST' onSubmit={handleSubmit}>
+            <form className='register__form' method='POST' onSubmit={handleSubmit}>
                 <div className="input__fields">
                     <label htmlFor="username">Username</label>
                     <input type="text" name="username" id="username" required minLength={4} maxLength={15} onChange={handleChangeEvent} />
@@ -37,7 +37,7 @@ const Form = () => {
                     <label htmlFor="password">Password</label>
                     <input type="password" name="password" id="password" required minLength={8} maxLength={15} onChange={handleChangeEvent} />
                 </div>
-                <button type="submit">Register</button>
+                <button className='submit__btn' type="submit">Register</button>
                 <hr />
             </form>
         </div>
