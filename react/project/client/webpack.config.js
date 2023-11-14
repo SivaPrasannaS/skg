@@ -1,12 +1,27 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+// const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
     entry: './src/index.js',
+    // stats: 'verbose',
+    // watchOptions: {
+    //     poll: 1000,
+    // },
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js',
     },
+    // devServer: {
+    //     static: {
+    //         directory: path.join(__dirname, 'dist'),
+    //         watch: true,
+    //     },
+    //     watchFiles: ['dist/**/*'],
+    //     devMiddleware: {
+    //         writeToDisk: true,
+    //     },
+    // },
     resolve: {
         modules: ['node_modules', 'src'],
         extensions: ['.js', '.jsx'],
@@ -18,6 +33,9 @@ module.exports = {
                 exclude: /node_modules/,
                 use: {
                     loader: 'babel-loader',
+                    // options: {
+                    //     cacheDirectory: true,
+                    // },
                 },
             },
             {
@@ -35,6 +53,7 @@ module.exports = {
         ],
     },
     plugins: [
+        // new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
             template: './public/index.html',
         }),

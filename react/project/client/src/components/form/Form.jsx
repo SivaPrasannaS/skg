@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../../assets/css/Form.css';
 
-const Form = () => {
+export const RegisterForm = () => {
 
     const [formData, setFormData] = useState({
         username: '',
@@ -43,5 +43,3 @@ const Form = () => {
         </div>
     )
 }
-
-export default Form;
