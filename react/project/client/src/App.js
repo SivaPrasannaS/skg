@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
-import { RegisterForm } from './components/form/Form';
+import FruitSurvey from './components/class_exercises/Day4/CE/FruitSurvey';
 
 function App() {
   return (
 
     <div className="App">
-      <RegisterForm />
+      <FruitSurvey />
     </div>
   );
 }
