@@ -1,12 +1,12 @@
 import React from 'react';
-import './App.css';
-import FruitSurvey from './components/class_exercises/Day4/CE/FruitSurvey';
+import Routing from './components/routers/Routing';
 
 function App() {
-  return (
 
-    <div className="App">
-      <FruitSurvey />
+
+  return (
+    <div className='App'>
+      <Routing />
     </div>
   );
 }

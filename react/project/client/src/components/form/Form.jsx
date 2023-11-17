@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import '../../assets/css/Form.css';
+import { useNavigate } from 'react-router-dom';
 
 export const RegisterForm = () => {
+
+    const navigate = useNavigate();
 
     const [formData, setFormData] = useState({
         username: '',
@@ -20,6 +23,7 @@ export const RegisterForm = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
         console.log(formData);
+        navigate('/hello');
     }
 
     return (
