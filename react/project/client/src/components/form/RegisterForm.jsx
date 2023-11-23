@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import '../../assets/css/Form.css';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { registerUser } from '../../services/UserApi';
 
-export const RegisterForm = () => {
+const RegisterForm = () => {
 
     const navigate = useNavigate();
 
@@ -22,8 +23,8 @@ export const RegisterForm = () => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        console.log(formData);
-        navigate('/hello');
+        registerUser(formData);
+        navigate('/login');
     }
 
     return (
@@ -42,8 +43,10 @@ export const RegisterForm = () => {
                     <input type="password" name="password" id="password" required minLength={8} maxLength={15} onChange={handleChangeEvent} />
                 </div>
                 <button className='submit__btn' type="submit">Register</button>
-                <hr />
+                <p>Existing user?<span><Link style={{ textDecoration: 'none', marginLeft: '3px' }} to={`/login`}>Login here</Link></span></p>
             </form>
         </div>
     )
 }
+
+export default RegisterForm;
